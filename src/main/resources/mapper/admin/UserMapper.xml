@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xwtec.dao.admin.IUserMapper">
+<!--    <resultMap id="userMap" type="com.xwtec.pojo.User">-->
+<!--        <result property="username" column="USERNAME" jdbcType="VARCHAR"/>-->
+<!--        <result property="password" column="PASSWORD" jdbcType="VARCHAR"/>-->
+<!--        <result property="roleId" column="ROLE_ID" jdbcType="INTEGER"/>-->
+<!--    </resultMap>-->
+<!--    <select id="qryAllUser"  resultMap="userMap">-->
+<!--        SELECT F.USERNAME,F.PASSWORD,F.ROLE_ID FROM F_USER F-->
+<!--    </select>-->
+<!--    <select id="qryUsername" resultType="java.lang.String">-->
+<!--        SELECT F.USERNAME FROM F_USER F WHERE F.ID = '1'-->
+<!--    </select>-->
+
+    <select id="qryAllUserList" resultType="map">
+        SELECT * FROM F_USER F
+    </select>
+</mapper>
