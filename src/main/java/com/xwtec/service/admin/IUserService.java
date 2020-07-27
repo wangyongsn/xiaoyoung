@@ -5,4 +5,6 @@ import java.util.Map;
 
 public interface IUserService {
     List<Map<String,Object>> qryAllUser();
+
+    int insertUser(Map<String, Object> paraMap);
 }

@@ -18,4 +18,7 @@
     <select id="qryAllUserList" resultType="map">
         SELECT * FROM F_USER F
     </select>
+    <update id="insertUser" parameterType="map">
+        INSERT INTO F_USER (USERNAME,PASSWORD,ROLE_ID,ID) VALUES (#{username},#{password},#{roleId},#{id})
+    </update>
 </mapper>
