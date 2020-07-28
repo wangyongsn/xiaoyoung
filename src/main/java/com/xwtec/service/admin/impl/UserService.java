@@ -30,10 +30,10 @@ public class UserService implements IUserService {
     @Transactional(value = "maseterDataSourceTransactionManager")
     @Override
     public int insertUser(Map<String, Object> paraMap) {
-        int insertUser = userMapper.insertUser(paraMap);
-        log.error("数据回滚，开始");
-        int a = 1/0;
-        log.error("数据回滚！");
-        return insertUser;
+//        int insertUser = userMapper.insertUser(paraMap);
+//        log.error("数据回滚，开始");
+//        int a = 1/0;
+//        log.error("数据回滚！");
+        return 0;
     }
 }
